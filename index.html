@@ -44,7 +44,7 @@
 			$(".js-btn").click(function(){
 				var string = $(".string").val();
 				var substring = $(".substring").val();
-				var position = string.indexOf(substring);
+				var position = string.search(substring);
 				$("#kq").html(position);
 			});
 		});
