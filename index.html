@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Tìm kiếm chuỗi</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
     <div class="container">
@@ -32,7 +33,10 @@
 	<script>
 		$(document).ready(function(){
 			$(".js-btn").click(function(){
-				alert(123);
+				var string = $("input['name=string']").value;
+				var substring = $("input['name=substring']").value;
+				alert(string);
+				alert(substring);
 			});
 		});
 	</script>
