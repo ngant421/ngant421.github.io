@@ -21,12 +21,20 @@
 					<form class="" action="index.php" method="post">
 					  <input type="text" name="string" value="" placeholder="Nhập chuỗi" class="form-control"><br /><br />
 					  <input type="text" name="substring" value="" placeholder="Nhập substring" class="form-control">
-					  <input type="submit" name="search" value="Tìm kiếm" class="btn" style="margin-top: 2%;">
+					  <input type="button" name="search" value="Tìm kiếm" class="btn js-btn" style="margin-top: 2%;">
 					</form>
 				</center>
 			</div>
 			<div class="col-3"></div>
 		</div>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".js-btn").click(function(){
+				alert(123);
+			});
+		});
+	</script>
   </body>
 </html>
